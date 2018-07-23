@@ -20,7 +20,7 @@ module FormsLab
       params[:pirate][:ships].each do |det|
         Ship.new(det)
       end
-      #binding.pry
+      binding.pry
       erb :'pirates/show'
     end
 
