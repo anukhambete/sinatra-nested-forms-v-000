@@ -14,6 +14,7 @@ module FormsLab
     end
 
     post '/pirates' do
+      @pirate = Student.new(params[:pirate])
       erb :'pirates/show'
     end
 
